@@ -84,7 +84,7 @@
 
         z-index: 100;
 
-        background-image: url(../../images/icon-hamburger.svg);
+        background-image: url(../images/icon-hamburger.svg);
         background-size: cover;
         background-repeat: no-repeat;
 
@@ -102,7 +102,7 @@
     }
 
     &.active > &__burger {
-        background-image: url(../../images/icon-close.svg);
+        background-image: url(../images/icon-close.svg);
     }
 
     @media only screen and (min-width: $bp-small) {

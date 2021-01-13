@@ -4,7 +4,7 @@
     width: 100%;
     z-index: -1;
 
-    background-image: url(../../images/mobile/image-hero.jpg);
+    background-image: url(../images/mobile/image-hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -69,6 +69,6 @@
     }
 
     @media only screen and (min-width: $bp-med) {
-        background-image: url(../../images/desktop/image-hero.jpg);
+        background-image: url(../images/desktop/image-hero.jpg);
     }
 }

@@ -126,80 +126,80 @@
 
 .earth {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent),
-                        url(../../images/mobile/image-deep-earth.jpg);
+                        url(../images/mobile/image-deep-earth.jpg);
     
     @media only screen and (min-width: $bp-med) {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent),
-                        url(../../images/desktop/image-deep-earth.jpg);
+                        url(../images/desktop/image-deep-earth.jpg);
     }
 }
 
 .arcade {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent),
-                        url(../../images/mobile/image-night-arcade.jpg);
+                        url(../images/mobile/image-night-arcade.jpg);
 
     @media only screen and (min-width: $bp-med) {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent),
-                        url(../../images/desktop/image-night-arcade.jpg);
+                        url(../images/desktop/image-night-arcade.jpg);
     }
 }
 
 .soccer {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent),
-                        url(../../images/mobile/image-soccer-team.jpg);
+                        url(../images/mobile/image-soccer-team.jpg);
 
     @media only screen and (min-width: $bp-med) {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent),
-                        url(../../images/desktop/image-soccer-team.jpg);
+                        url(../images/desktop/image-soccer-team.jpg);
     }
 }
 
 .grid {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent),
-                        url(../../images/mobile/image-grid.jpg);
+                        url(../images/mobile/image-grid.jpg);
 
     @media only screen and (min-width: $bp-med) {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent),
-                        url(../../images/desktop/image-grid.jpg);
+                        url(../images/desktop/image-grid.jpg);
     }
 }
 
 .VR {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent),
-                        url(../../images/mobile/image-from-above.jpg);
+                        url(../images/mobile/image-from-above.jpg);
 
     @media only screen and (min-width: $bp-med) {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent),
-                        url(../../images/desktop/image-from-above.jpg);
+                        url(../images/desktop/image-from-above.jpg);
     }
 }
 
 .borealis {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent),
-                        url(../../images/mobile/image-pocket-borealis.jpg);
+                        url(../images/mobile/image-pocket-borealis.jpg);
 
     @media only screen and (min-width: $bp-med) {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent),
-                        url(../../images/desktop/image-pocket-borealis.jpg);
+                        url(../images/desktop/image-pocket-borealis.jpg);
     }
 }
 
 .curiosity {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent),
-                        url(../../images/mobile/image-curiosity.jpg);
+                        url(../images/mobile/image-curiosity.jpg);
 
     @media only screen and (min-width: $bp-med) {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent),
-                        url(../../images/desktop/image-curiosity.jpg);
+                        url(../images/desktop/image-curiosity.jpg);
     }
 }
 
 .fisheye {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent),
-                        url(../../images/mobile/image-fisheye.jpg);
+                        url(../images/mobile/image-fisheye.jpg);
 
     @media only screen and (min-width: $bp-med) {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent),
-                        url(../../images/desktop/image-fisheye.jpg);
+                        url(../images/desktop/image-fisheye.jpg);
     }
 }
