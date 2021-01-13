@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+// Breakpoints
+$bp-small: 640px;
+$bp-med: 900px;
+$bp-large: 1200px;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+:root {
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-black: hsl(0, 0%, 0%);
+    --clr-dark-grey: hsl(0, 0%, 55%);
+    --clr-very-dark-grey: hsl(0, 0%, 41%);
+
+    --font-size: 1.5rem;
+}
+
+body {
+    font-family: Alata, sans-serif;
+    font-size: var(--font-size);
+}
+
+.heading-2 {
+    margin-bottom: 2rem;
+
+    font-family: Josefin Sans, sans-serif;
+    font-size: 3.4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    @media only screen and (min-width: $bp-large) {
+        font-size: 3.8rem;
+    }
+}
+
+.heading-3 {
+    font-family: Josefin Sans, sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    @media only screen and (min-width: $bp-med) {
+        font-size: 2.8rem;
+    }
+}
+
+.btn {
+    padding: 1rem 4rem;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 4px;
+
+    border: 1px solid black;
+
+    transition: background-color .1s ease-in;
+
+    &:hover {
+        color: white;
+
+        background-color: black;
+    }
+}
+
+.link {
+
+    &::after{
+        content: "";
+        display: none;
+        height: 1px;
+        width: 24px;
+
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+
+        transform: translate(-50%, .5rem);
+
+        background-color: white;
+    }
+    
+    &:hover::after{
+        display: block;
+    }
+}

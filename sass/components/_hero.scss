@@ -1,0 +1,74 @@
+.hero {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    z-index: -1;
+
+    background-image: url(../../images/mobile/image-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    transform: translateY(-7.5rem);
+
+    &__container {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media only screen and (min-width: $bp-small) {
+            width: 85%;
+            max-width: 120rem;
+
+            margin: 0 auto;
+            
+            justify-content: flex-start;
+        }
+    }
+
+    &__heading {
+        display: inline-block;
+
+        width: 30rem;
+        padding: 2rem;
+
+        font-family: Josefin Sans, sans-serif;
+        font-size: 3.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: var(--clr-white);
+        word-spacing: 999rem;
+
+        border: 2px solid var(--clr-white);
+
+        @media only screen and (min-width: $bp-small) {
+            width: 40rem;
+            margin-top: 6rem;
+
+            font-size: 4.8rem;
+            word-spacing: unset;
+        }
+
+        @media only screen and (min-width: $bp-med) {
+            width: 50rem;
+
+            font-size: 6.2rem;
+        }
+
+        @media only screen and (min-width: $bp-large) {
+            width: 68rem;
+
+            font-size: 7.8rem;
+        }
+    }
+
+    @media only screen and (min-width: $bp-small) {
+        height: 60rem;
+    }
+
+    @media only screen and (min-width: $bp-med) {
+        background-image: url(../../images/desktop/image-hero.jpg);
+    }
+}

@@ -1,0 +1,115 @@
+.header {
+    position: relative;
+    padding: 4rem 3rem 1rem;
+
+    height: 7.5rem;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        width: 15rem;
+        z-index: 101;
+    }
+
+    &__nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+
+        display: none;
+
+        padding: 20rem 3rem 3rem;
+
+        height: 100vh;
+        width: 100vw;
+
+        background-color: black;
+
+        @media only screen and (min-width: $bp-small) {
+            position: static;
+            display: block;
+
+            padding: 2rem;
+
+            height: unset;
+            width: unset;
+
+            background-color: transparent;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        line-height: 2;
+
+        @media only screen and (min-width: $bp-small) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__item {
+        text-transform: uppercase;
+        
+        @media only screen and (min-width: $bp-small) {
+            text-transform: none;
+
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+        }
+    }
+
+    &__link {
+        position: relative;
+        font-size: 2.8rem;
+        text-decoration: none;
+        color: white;
+
+        
+
+        @media only screen and (min-width: $bp-small) {
+            font-size: var(--font-size);
+        }
+    }
+
+    &__burger {
+        height: 2rem;
+        width: 2rem;
+
+        z-index: 100;
+
+        background-image: url(../../images/icon-hamburger.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @media only screen and (min-width: $bp-small) {
+            display: none;
+        }
+    }
+
+    &.active {
+        position: fixed;
+    }
+
+    &.active > &__nav {
+        display: block;
+    }
+
+    &.active > &__burger {
+        background-image: url(../../images/icon-close.svg);
+    }
+
+    @media only screen and (min-width: $bp-small) {
+        width: 85%;
+        max-width: 120rem;
+
+        margin: 0 auto;
+        padding: 4rem 0 0;
+    }
+}

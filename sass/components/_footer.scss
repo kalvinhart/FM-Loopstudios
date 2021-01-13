@@ -1,0 +1,110 @@
+.footer {
+    background-color: black;
+
+    text-align: center;
+
+    &__container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 6rem 2rem;
+
+        text-align: center;
+
+        @media only screen and (min-width: $bp-med) {
+            width: 85%;
+            max-width: 120rem;
+            padding: 6rem 0;
+
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media only screen and (min-width: $bp-med) {
+            align-items: flex-start;
+        }
+    }
+
+    &__logo {
+        width: 15rem;
+        margin-bottom: 4rem;
+
+        @media only screen and (min-width: $bp-med) {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    &__nav {
+        margin-bottom: 4rem;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        list-style: none;
+
+        @media only screen and (min-width: $bp-med) {
+            flex-direction: row;
+        }
+    }
+
+    &__item {
+        margin-bottom: 2rem;
+
+        @media only screen and (min-width: $bp-med) {
+            margin-bottom: 0;
+
+            &:not(:last-child) {
+                margin-right: 4rem;
+            }
+        }
+    }
+
+    &__link {
+        position: relative;
+        text-decoration: none;
+        color: var(--clr-white);
+    }
+
+    &__end {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media only screen and (min-width: $bp-med) {
+            align-items: flex-end;
+        }
+    }
+
+    &__socials {
+        margin-bottom: 2rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & > *:not(:last-child) {
+            margin-right: 2rem;
+        }
+
+        &-link {
+            padding-bottom: .5rem;
+            border-bottom: 1px solid transparent;
+
+            &:hover {
+                border-bottom: 1px solid white;
+            }
+        }
+    }
+
+    &__copyright {
+        color: var(--clr-very-dark-grey);
+    }
+}
